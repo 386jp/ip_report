@@ -2,7 +2,8 @@ version: "3.8"
 
 services:
   app:
-    build: .
+    # build: .
+    image: 386jp/public_ip_report:latest
     restart: always
     environment:
       FETCH_INTERVAL: ${FETCH_INTERVAL}
