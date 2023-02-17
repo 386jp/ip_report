@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "ip-report"
+version = "0.1.0"
+description = ""
+authors = ["Kyosuke Miyamura <ask@386.jp>"]
+readme = "README.md"
+packages = [{include = "ip_report"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.28.2"
+python-dotenv = "^0.21.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

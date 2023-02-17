@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  app:
+    build: .
+    restart: always
+    environment:
+      FETCH_INTERVAL: ${FETCH_INTERVAL}
+      WEBHOOK_URL: ${WEBHOOK_URL}
+      ALWAYS_REPORT: ${ALWAYS_REPORT}
+      TZ: ${TZ}
